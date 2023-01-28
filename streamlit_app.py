@@ -13,6 +13,6 @@ my_fruit_list=pa.read_csv("https://uni-lab-files.s3.us-west-2.amazonaws.com/dabw
 my_furit_list=my_fruit_list.set_index('Fruit')
  
 ##picklist 
-streamlit.multiselect("Pick Your Fruits Here1:" , my_fruit_list.set_index('Serving_Size'))
+streamlit.multiselect("Pick Your Fruits Here :" , my_fruit_list.set_index('Serving_Size'))
 #stramlit.text(list[my_fruit_list.index])
 streamlit.dataframe(my_fruit_list)
