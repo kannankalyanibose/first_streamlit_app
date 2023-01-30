@@ -18,6 +18,6 @@ my_furit_list=my_fruit_list.set_index('Fruit',inplace=True)
 #streamlit.multiselect("Pick Your Fruits Here :" , my_fruit_list.set_index('Serving_Size'))
 streamlit.multiselect("Pick Your Fruits Here :" , list(my_fruit_list.index))
 
-#streamlit.multiselect("Pick Your Fruits Here :" , list(my_fruit_list.index),['Avocado','Strawberries'])
+streamlit.multiselect("Pick Your Fruits Here :" , list(my_fruit_list.index),['Avocado','Strawberries'])
 #stramlit.text(list[my_fruit_list.index])
 streamlit.dataframe(my_fruit_list)
